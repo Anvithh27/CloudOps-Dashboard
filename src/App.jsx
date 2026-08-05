@@ -15,25 +15,17 @@ function App() {
 
 		      <div className="app">
 
-		        <Sidebar />
+    <Sidebar />
 
-		        <div className="content">
+    <div className="main-content">
 
-		          <Navbar />
+        <Navbar />
 
-		          <Routes>
+        <Dashboard />
 
-		            <Route path="/" element={<Dashboard />} />
+    </div>
 
-		            <Route path="/services" element={<Services />} />
-
-		            <Route path="/about" element={<About />} />
-
-		          </Routes>
-
-		        </div>
-
-		      </div>
+</div>
 
 		    );
 

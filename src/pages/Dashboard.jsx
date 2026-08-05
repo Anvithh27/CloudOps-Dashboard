@@ -7,11 +7,31 @@ function Dashboard() {
 	  const [status, setStatus] = useState("Checking...");
 
 	  const metrics = [
-		      { title: "Pods", value: 12 },
-		      { title: "Deployments", value: 4 },
-		      { title: "Services", value: 6 },
-		      { title: "Nodes", value: 2 },
-		    ];
+  {
+    title: "Pods",
+    value: "12 Running",
+    icon: "☸️",
+    status: "Healthy",
+  },
+  {
+    title: "Deployments",
+    value: 4,
+    icon: "📦",
+    status: "Healthy",
+  },
+  {
+    title: "Services",
+    value: 6,
+    icon: "🌐",
+    status: "Healthy",
+  },
+  {
+    title: "Nodes",
+    value: 2,
+    icon: "🖥️",
+    status: "Ready",
+  },
+];
 
 	  useEffect(() => {
 		      const fetchData = async () => {
