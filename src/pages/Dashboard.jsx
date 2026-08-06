@@ -36,7 +36,7 @@ function Dashboard() {
 	  useEffect(() => {
 		      const fetchData = async () => {
 			            try {
-					            const messageResponse = await api.get("/api/message");
+					            const messageResponse = await api.get("/message");
 					            const healthResponse = await api.get("/health");
 
 					            setMessage(messageResponse.data.message);
